@@ -1,0 +1,28 @@
+[{
+  "_id": {
+    "$oid": "6060cce7adf71b227138cd06"
+  },
+  "name": "Drink",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6060ccefadf71b227138cd07"
+  },
+  "name": "Breakfast",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6060ccf6adf71b227138cd08"
+  },
+  "name": "Lunch",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6060d85badf71b227138cd13"
+  },
+  "name": "Dinner",
+  "__v": 0
+}]

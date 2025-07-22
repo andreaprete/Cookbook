@@ -1,0 +1,39 @@
+[{
+  "_id": {
+    "$oid": "687a619d75ef745234a5e13f"
+  },
+  "savedRecipes": [
+    {
+      "$oid": "687a50ca7853700faab05da0"
+    },
+    {
+      "$oid": "687b814d5d7427425c19fd14"
+    }
+  ],
+  "firstname": "Mariolino",
+  "lastname": "Bubusettete",
+  "street": "street 3",
+  "postcode": "47692",
+  "city": "Name of Village",
+  "country": "Germany",
+  "phone": "015206984620",
+  "email": "test@example.com",
+  "password": "8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92",
+  "__v": 35
+},
+{
+  "_id": {
+    "$oid": "687b80ee5d7427425c19fd14"
+  },
+  "savedRecipes": [],
+  "firstname": "Sabrina",
+  "lastname": "Foto",
+  "street": "Viale oddone",
+  "postcode": "15033",
+  "city": "Casale Monferrato",
+  "country": "Italy",
+  "phone": "123456789",
+  "email": "sabrinafoto@gmail.com",
+  "password": "15e2b0d3c33891ebb0f1ef609ec419420c20e320ce94c65fbc8c3312448eb225",
+  "__v": 0
+}]

@@ -1,0 +1,5 @@
+start with: pm2 start app.js -- "Databasename" 
+        oder node app.js "Databasename"
+
+
+API Doku: http://localhost:3030/docs/#/

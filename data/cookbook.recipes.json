@@ -1,0 +1,547 @@
+[{
+  "_id": {
+    "$oid": "687b810d5d7427425c19fd10"
+  },
+  "name": "Test Recipe 1",
+  "ingredients": [
+    {
+      "_id": {
+        "$oid": "687b810d5d7427425c19fd11"
+      },
+      "ingredient": "Mehl",
+      "amount": 150,
+      "unit": "g"
+    }
+  ],
+  "portion": 1,
+  "nutritionalValues": [
+    {
+      "_id": {
+        "$oid": "687b810d5d7427425c19fd12"
+      },
+      "kcal": "400",
+      "protein": "10",
+      "fat": "15",
+      "carbohydrates": "60"
+    }
+  ],
+  "directions": "Mix ingredients and cook for 30 minutes.",
+  "tags": [
+    "easy",
+    "quick"
+  ],
+  "href": "http://localhost:3010/images/recipe1.jpg",
+  "time": 30,
+  "comments": [
+    {
+      "_id": {
+        "$oid": "687ba6b62ee68c330c808569"
+      },
+      "user": {
+        "$oid": "687a619d75ef745234a5e13f"
+      },
+      "comment": "one comment\n"
+    }
+  ],
+  "rating": [
+    {
+      "_id": {
+        "$oid": "687ba6a82ee68c330c808568"
+      },
+      "user": {
+        "$oid": "687a619d75ef745234a5e13f"
+      },
+      "value": 4
+    }
+  ],
+  "categories": [
+    {
+      "$oid": "6060ccefadf71b227138cd07"
+    }
+  ],
+  "user": {
+    "$oid": "687a619d75ef745234a5e13f"
+  },
+  "__v": 2
+},
+{
+  "_id": {
+    "$oid": "687b811d5d7427425c19fd11"
+  },
+  "name": "Test Recipe 2",
+  "ingredients": [
+    {
+      "_id": {
+        "$oid": "687b811d5d7427425c19fd12"
+      },
+      "ingredient": "Milch",
+      "amount": 150,
+      "unit": "ml"
+    }
+  ],
+  "portion": 2,
+  "nutritionalValues": [
+    {
+      "_id": {
+        "$oid": "687b811d5d7427425c19fd13"
+      },
+      "kcal": "400",
+      "protein": "10",
+      "fat": "15",
+      "carbohydrates": "60"
+    }
+  ],
+  "directions": "Mix ingredients and cook for 30 minutes.",
+  "tags": [
+    "easy",
+    "quick"
+  ],
+  "href": "http://localhost:3010/images/recipe2.jpg",
+  "time": 30,
+  "comments": [],
+  "rating": [
+    {
+      "_id": {
+        "$oid": "687ba29d2ee68c330c808565"
+      },
+      "user": {
+        "$oid": "687a619d75ef745234a5e13f"
+      },
+      "value": 5
+    }
+  ],
+  "categories": [
+    {
+      "$oid": "6060ccefadf71b227138cd07"
+    }
+  ],
+  "user": {
+    "$oid": "687b80ee5d7427425c19fd14"
+  },
+  "__v": 1
+},
+{
+  "_id": {
+    "$oid": "687b812d5d7427425c19fd12"
+  },
+  "name": "Test Recipe 3",
+  "ingredients": [
+    {
+      "_id": {
+        "$oid": "687b812d5d7427425c19fd13"
+      },
+      "ingredient": "Mehl",
+      "amount": 150,
+      "unit": "g"
+    }
+  ],
+  "portion": 3,
+  "nutritionalValues": [
+    {
+      "_id": {
+        "$oid": "687b812d5d7427425c19fd14"
+      },
+      "kcal": "400",
+      "protein": "10",
+      "fat": "15",
+      "carbohydrates": "60"
+    }
+  ],
+  "directions": "Mix ingredients and cook for 30 minutes.",
+  "tags": [
+    "easy",
+    "quick"
+  ],
+  "href": "http://localhost:3010/images/recipe3.jpg",
+  "time": 30,
+  "comments": [],
+  "rating": [],
+  "categories": [
+    {
+      "$oid": "6060ccefadf71b227138cd07"
+    }
+  ],
+  "user": {
+    "$oid": "687a619d75ef745234a5e13f"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "687b813d5d7427425c19fd13"
+  },
+  "name": "Test Recipe 4",
+  "ingredients": [
+    {
+      "_id": {
+        "$oid": "687b813d5d7427425c19fd14"
+      },
+      "ingredient": "Milch",
+      "amount": 150,
+      "unit": "ml"
+    }
+  ],
+  "portion": 4,
+  "nutritionalValues": [
+    {
+      "_id": {
+        "$oid": "687b813d5d7427425c19fd15"
+      },
+      "kcal": "400",
+      "protein": "10",
+      "fat": "15",
+      "carbohydrates": "60"
+    }
+  ],
+  "directions": "Mix ingredients and cook for 30 minutes.",
+  "tags": [
+    "easy",
+    "quick"
+  ],
+  "href": "http://localhost:3010/images/recipe4.jpg",
+  "time": 30,
+  "comments": [
+    {
+      "_id": {
+        "$oid": "687b9ebfdc19a00bc80a0256"
+      },
+      "user": {
+        "$oid": "687a619d75ef745234a5e13f"
+      },
+      "comment": "My first comment"
+    },
+    {
+      "_id": {
+        "$oid": "687b9ec6dc19a00bc80a0257"
+      },
+      "user": {
+        "$oid": "687a619d75ef745234a5e13f"
+      },
+      "comment": "My second comment"
+    },
+    {
+      "_id": {
+        "$oid": "687ba2872ee68c330c808564"
+      },
+      "user": {
+        "$oid": "687a619d75ef745234a5e13f"
+      },
+      "comment": "iycyvhj"
+    }
+  ],
+  "rating": [
+    {
+      "_id": {
+        "$oid": "687b9ecadc19a00bc80a0258"
+      },
+      "user": {
+        "$oid": "687a619d75ef745234a5e13f"
+      },
+      "value": 5
+    }
+  ],
+  "categories": [
+    {
+      "$oid": "6060ccefadf71b227138cd07"
+    }
+  ],
+  "user": {
+    "$oid": "687b80ee5d7427425c19fd14"
+  },
+  "__v": 4
+},
+{
+  "_id": {
+    "$oid": "687b814d5d7427425c19fd14"
+  },
+  "name": "Test Recipe 5",
+  "ingredients": [
+    {
+      "_id": {
+        "$oid": "687b814d5d7427425c19fd15"
+      },
+      "ingredient": "Mehl",
+      "amount": 150,
+      "unit": "g"
+    }
+  ],
+  "portion": 1,
+  "nutritionalValues": [
+    {
+      "_id": {
+        "$oid": "687b814d5d7427425c19fd16"
+      },
+      "kcal": "400",
+      "protein": "10",
+      "fat": "15",
+      "carbohydrates": "60"
+    }
+  ],
+  "directions": "Mix ingredients and cook for 30 minutes.",
+  "tags": [
+    "easy",
+    "quick"
+  ],
+  "href": "http://localhost:3010/images/recipe5.jpg",
+  "time": 30,
+  "comments": [],
+  "rating": [],
+  "categories": [
+    {
+      "$oid": "6060ccefadf71b227138cd07"
+    }
+  ],
+  "user": {
+    "$oid": "687a619d75ef745234a5e13f"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "687b815d5d7427425c19fd15"
+  },
+  "name": "Test Recipe 6",
+  "ingredients": [
+    {
+      "_id": {
+        "$oid": "687b815d5d7427425c19fd16"
+      },
+      "ingredient": "Milch",
+      "amount": 150,
+      "unit": "ml"
+    }
+  ],
+  "portion": 2,
+  "nutritionalValues": [
+    {
+      "_id": {
+        "$oid": "687b815d5d7427425c19fd17"
+      },
+      "kcal": "400",
+      "protein": "10",
+      "fat": "15",
+      "carbohydrates": "60"
+    }
+  ],
+  "directions": "Mix ingredients and cook for 30 minutes.",
+  "tags": [
+    "easy",
+    "quick"
+  ],
+  "href": "http://localhost:3010/images/recipe6.jpg",
+  "time": 30,
+  "comments": [],
+  "rating": [
+    {
+      "_id": {
+        "$oid": "687ba2d72ee68c330c808566"
+      },
+      "user": {
+        "$oid": "687a619d75ef745234a5e13f"
+      },
+      "value": 3
+    },
+    {
+      "_id": {
+        "$oid": "687ba3152ee68c330c808567"
+      },
+      "user": {
+        "$oid": "687b80ee5d7427425c19fd14"
+      },
+      "value": 4
+    }
+  ],
+  "categories": [
+    {
+      "$oid": "6060ccefadf71b227138cd07"
+    }
+  ],
+  "user": {
+    "$oid": "687b80ee5d7427425c19fd14"
+  },
+  "__v": 2
+},
+{
+  "_id": {
+    "$oid": "687b816d5d7427425c19fd16"
+  },
+  "name": "Test Recipe 7",
+  "ingredients": [
+    {
+      "_id": {
+        "$oid": "687b816d5d7427425c19fd17"
+      },
+      "ingredient": "Mehl",
+      "amount": 150,
+      "unit": "g"
+    }
+  ],
+  "portion": 3,
+  "nutritionalValues": [
+    {
+      "_id": {
+        "$oid": "687b816d5d7427425c19fd18"
+      },
+      "kcal": "400",
+      "protein": "10",
+      "fat": "15",
+      "carbohydrates": "60"
+    }
+  ],
+  "directions": "Mix ingredients and cook for 30 minutes.",
+  "tags": [
+    "easy",
+    "quick"
+  ],
+  "href": "http://localhost:3010/images/recipe7.jpg",
+  "time": 30,
+  "comments": [],
+  "rating": [],
+  "categories": [
+    {
+      "$oid": "6060ccefadf71b227138cd07"
+    }
+  ],
+  "user": {
+    "$oid": "687a619d75ef745234a5e13f"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "687b817d5d7427425c19fd17"
+  },
+  "name": "Test Recipe 8",
+  "ingredients": [
+    {
+      "_id": {
+        "$oid": "687b817d5d7427425c19fd18"
+      },
+      "ingredient": "Milch",
+      "amount": 150,
+      "unit": "ml"
+    }
+  ],
+  "portion": 4,
+  "nutritionalValues": [
+    {
+      "_id": {
+        "$oid": "687b817d5d7427425c19fd19"
+      },
+      "kcal": "400",
+      "protein": "10",
+      "fat": "15",
+      "carbohydrates": "60"
+    }
+  ],
+  "directions": "Mix ingredients and cook for 30 minutes.",
+  "tags": [
+    "easy",
+    "quick"
+  ],
+  "href": "http://localhost:3010/images/recipe8.jpg",
+  "time": 30,
+  "comments": [],
+  "rating": [],
+  "categories": [
+    {
+      "$oid": "6060ccefadf71b227138cd07"
+    }
+  ],
+  "user": {
+    "$oid": "687b80ee5d7427425c19fd14"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "687b818d5d7427425c19fd18"
+  },
+  "name": "Test Recipe 9",
+  "ingredients": [
+    {
+      "_id": {
+        "$oid": "687b818d5d7427425c19fd19"
+      },
+      "ingredient": "Mehl",
+      "amount": 150,
+      "unit": "g"
+    }
+  ],
+  "portion": 1,
+  "nutritionalValues": [
+    {
+      "_id": {
+        "$oid": "687b818d5d7427425c19fd20"
+      },
+      "kcal": "400",
+      "protein": "10",
+      "fat": "15",
+      "carbohydrates": "60"
+    }
+  ],
+  "directions": "Mix ingredients and cook for 30 minutes.",
+  "tags": [
+    "easy",
+    "quick"
+  ],
+  "href": "http://localhost:3010/images/recipe9.jpg",
+  "time": 30,
+  "comments": [],
+  "rating": [],
+  "categories": [
+    {
+      "$oid": "6060ccefadf71b227138cd07"
+    }
+  ],
+  "user": {
+    "$oid": "687a619d75ef745234a5e13f"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "687b819d5d7427425c19fd19"
+  },
+  "name": "Test Recipe 10",
+  "ingredients": [
+    {
+      "_id": {
+        "$oid": "687b819d5d7427425c19fd20"
+      },
+      "ingredient": "Milch",
+      "amount": 150,
+      "unit": "ml"
+    }
+  ],
+  "portion": 2,
+  "nutritionalValues": [
+    {
+      "_id": {
+        "$oid": "687b819d5d7427425c19fd21"
+      },
+      "kcal": "400",
+      "protein": "10",
+      "fat": "15",
+      "carbohydrates": "60"
+    }
+  ],
+  "directions": "Mix ingredients and cook for 30 minutes.",
+  "tags": [
+    "easy",
+    "quick"
+  ],
+  "href": "http://localhost:3010/images/recipe10.jpg",
+  "time": 30,
+  "comments": [],
+  "rating": [],
+  "categories": [
+    {
+      "$oid": "6060ccefadf71b227138cd07"
+    }
+  ],
+  "user": {
+    "$oid": "687b80ee5d7427425c19fd14"
+  },
+  "__v": 0
+}]
