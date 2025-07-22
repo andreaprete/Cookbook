@@ -2,9 +2,9 @@
 Web Programming exercise
 
 # Download and start mongoDB
-Start MongoDB at localhost:27017
-Create the database "cookbook" and collections categories, recipes and users
-Import the data in the \data folder
+- Start MongoDB at localhost:27017
+- Create the database "cookbook" and collections categories, recipes and users
+- Import the data in the \data folder
 
 # Run server
 Start the backend
