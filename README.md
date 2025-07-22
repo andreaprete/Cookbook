@@ -16,10 +16,13 @@ node app.js cookbook
 ```
 
 ## Run app
-
+Start application
 ```sh
 # Install dependencies
 npm install
+
+# Install special (?) dependencies
+npm install react-redux @reduxjs/toolkit react-router-dom axios bootstrap
 
 # Start the development server
 npm run dev
