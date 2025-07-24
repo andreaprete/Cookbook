@@ -28,7 +28,7 @@ function App() {
 
   return (
     <Router>
-      <Navbar /> {/* 👈 Added the Navbar */}
+      <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/recipe/:id" element={<RecipeDetail />} />

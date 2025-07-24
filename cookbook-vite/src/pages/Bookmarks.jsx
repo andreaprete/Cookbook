@@ -1,4 +1,3 @@
-// src/pages/Bookmarks.js
 import { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
 import axios from '../axios';
@@ -27,7 +26,7 @@ export default function Bookmarks() {
       })
       .catch((err) => {
         console.error(err);
-        setError('❌ Failed to load bookmarks');
+        setError('Failed to load bookmarks');
       });
   }, []);
 

@@ -1,11 +1,10 @@
-// src/features/bookmarks/bookmarksSlice.js
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from '../../axios';
 
 export const fetchBookmarks = createAsyncThunk('bookmarks/fetch', async (_, { rejectWithValue }) => {
   try {
     const res = await axios.get('/cookbook/saved', { withCredentials: true });
-    return res.data.savedRecipes.map(r => r._id); // store just the IDs
+    return res.data.savedRecipes.map(r => r._id);
   } catch (err) {
     return rejectWithValue(err.response?.data || 'Failed to fetch bookmarks');
   }

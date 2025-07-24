@@ -36,15 +36,15 @@ export default function Register() {
 
       if (res.ok) {
         dispatch(setUser({ email: formData.email }));
-        setMessage('✅ Registered and logged in!');
+        setMessage('Registered and logged in!');
         setTimeout(() => navigate('/'), 1000);
       } else {
         const errText = await res.text();
-        setMessage(`❌ ${errText}`);
+        setMessage(`${errText}`);
       }
     } catch (err) {
       console.error(err);
-      setMessage('❌ Registration failed');
+      setMessage('Registration failed');
     }
   };
 

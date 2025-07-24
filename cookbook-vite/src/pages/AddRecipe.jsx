@@ -88,14 +88,14 @@ export default function AddRecipe() {
     try {
       const res = await axios.post('/cookbook/recipe', payload, { withCredentials: true });
       if (res.status === 201) {
-        setMessage('✅ Recipe added successfully!');
+        setMessage('Recipe added successfully!');
         setTimeout(() => navigate('/'), 1000);
       } else {
-        setMessage('❌ Submission failed.');
+        setMessage('Submission failed.');
       }
     } catch (err) {
-      console.error('🚨 Submission failed:', err.response?.data || err.message);
-      setMessage('❌ Submission failed: ' + (err.response?.data || 'Unknown error'));
+      console.error('Submission failed:', err.response?.data || err.message);
+      setMessage('Submission failed: ' + (err.response?.data || 'Unknown error'));
     }
   };
 

@@ -4,7 +4,7 @@ import { useDispatch } from 'react-redux';
 import { setUser } from '../features/user/userSlice';
 
 export default function Login() {
-  const [email, setEmail] = useState('test@example.com'); // default for dev
+  const [email, setEmail] = useState('test@example.com');
   const [password, setPassword] = useState('123456');
   const [message, setMessage] = useState('');
   const navigate = useNavigate();
@@ -22,21 +22,21 @@ export default function Login() {
       });
 
       if (res.ok) {
-        const userData = await res.json(); // <-- Get full user data from backend
-        console.log("🎯 userData from server:", userData);
+        const userData = await res.json(); 
+        console.log("userData from server:", userData);
 
         dispatch(setUser(userData));
         localStorage.setItem('user', JSON.stringify(userData));
 
-        setMessage('✅ Login successful!');
+        setMessage('Login successful!');
         setTimeout(() => navigate('/'), 1000);
       } else {
         const errText = await res.text();
-        setMessage(`❌ ${errText}`);
+        setMessage(`${errText}`);
       }
     } catch (err) {
       console.error(err);
-      setMessage('❌ Error logging in');
+      setMessage('Error logging in');
     }
   };
 

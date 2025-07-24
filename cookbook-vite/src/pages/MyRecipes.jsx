@@ -21,7 +21,7 @@ export default function MyRecipes() {
       setMyRecipes(res.data);
       setLoading(false);
     } catch (err) {
-      setError('❌ Failed to load your recipes');
+      setError('Failed to load your recipes');
       setLoading(false);
     }
   };
@@ -32,10 +32,10 @@ export default function MyRecipes() {
     try {
       await axios.delete(`/cookbook/delete/${id}`, { withCredentials: true });
       setMyRecipes((prev) => prev.filter((r) => r._id !== id));
-      setMessage('✅ Recipe deleted!');
+      setMessage('Recipe deleted!');
     } catch (err) {
       console.error(err);
-      setMessage('❌ Failed to delete recipe');
+      setMessage('Failed to delete recipe');
     }
   };
 

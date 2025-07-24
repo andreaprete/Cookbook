@@ -15,7 +15,7 @@ export default function Home() {
 
   useEffect(() => {
     dispatch(fetchCategories());
-    dispatch(fetchRecipes()); // always fetch all recipes once
+    dispatch(fetchRecipes());
   }, [dispatch]);
 
   const parseTags = (input) => {
@@ -30,10 +30,8 @@ export default function Home() {
   };
 
   const handleSearch = () => {
-    // No dispatch needed — filtering happens locally
   };
 
-  // 🔍 DEBUG LOGS
   console.log('Selected category:', selectedCategoryId);
   console.log('Parsed tags:', parseTags(tagInput));
   console.log('Recipes in Redux:', recipes);

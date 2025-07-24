@@ -6,7 +6,7 @@ export const fetchRecipes = createAsyncThunk('recipes/fetchAll', async (_, { rej
     const res = await axios.get('/cookbook/recipes');
     return res.data;
   } catch (err) {
-    console.error('❌ fetchRecipes failed:', err.response?.data || err.message);
+    console.error('fetchRecipes failed:', err.response?.data || err.message);
     return rejectWithValue(err.response?.data || 'Unknown error');
   }
 });
@@ -54,7 +54,6 @@ const recipeSlice = createSlice({
     builder
       .addCase(fetchCategories.fulfilled, (state, action) => {
         state.categories = action.payload;
-        // If we already have recipes, re-enrich them
         state.recipes = enrichRecipesWithCategories(state.recipes, state.categories);
       })
       .addCase(fetchRecipes.fulfilled, (state, action) => {

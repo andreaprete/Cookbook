@@ -21,7 +21,7 @@ export default function BookmarkButton({ recipeId }) {
         dispatch(addBookmark(recipeId));
       }
     } catch (err) {
-      console.error('❌ Bookmark toggle failed', err);
+      console.error('Bookmark toggle failed', err);
     }
   };
 

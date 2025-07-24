@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom';
 import { fetchRecipe } from '../features/recipes/recipeSlice';
-import { setUser } from '../features/user/userSlice'; // make sure this is imported
+import { setUser } from '../features/user/userSlice';
 
 export default function RecipeDetail() {
   const { id } = useParams();
@@ -19,14 +19,13 @@ export default function RecipeDetail() {
   const [ratingMessage, setRatingMessage] = useState('');
   const [selectedPortion, setSelectedPortion] = useState(1);
 
-  // 🔄 Restore user from localStorage after refresh
   useEffect(() => {
     const stored = localStorage.getItem('user');
     if (!reduxUser && stored) {
       try {
         dispatch(setUser(JSON.parse(stored)));
       } catch (e) {
-        console.error('🚨 Failed to restore user from localStorage', e);
+        console.error('Failed to restore user from localStorage', e);
       }
     }
   }, [dispatch, reduxUser]);
@@ -52,16 +51,16 @@ export default function RecipeDetail() {
         body: JSON.stringify({ recipe: localRecipe._id, comment })
       });
       if (res.ok) {
-        setMessage('✅ Comment submitted!');
+        setMessage('Comment submitted!');
         setComment('');
         dispatch(fetchRecipe(id));
       } else {
         const txt = await res.text();
-        setMessage(`❌ ${txt}`);
+        setMessage(`${txt}`);
       }
     } catch (err) {
       console.error(err);
-      setMessage('❌ Something went wrong');
+      setMessage('Something went wrong');
     }
   };
 
@@ -75,15 +74,15 @@ export default function RecipeDetail() {
       });
 
       if (res.ok) {
-        setRatingMessage('✅ Rating submitted!');
+        setRatingMessage('Rating submitted!');
         dispatch(fetchRecipe(id));
       } else {
         const txt = await res.text();
-        setRatingMessage(`❌ ${txt}`);
+        setRatingMessage(`${txt}`);
       }
     } catch (err) {
       console.error(err);
-      setRatingMessage('❌ Something went wrong');
+      setRatingMessage('Something went wrong');
     }
   };
 
