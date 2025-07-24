@@ -1,30 +1,31 @@
 # Cookbook
 Web Programming exercise
 
-# vite-react-starter
+# Download and start mongoDB
+- Start MongoDB at localhost:27017
+- Create the database "cookbook" and collections categories, recipes and users
+- Import the data in the \data folder
 
-A basic starter template for building React apps with Vite.
-
-Create a new local app like this:
+# Run server
+Start the backend
 
 ```sh
-# Fetch files from this repo
-npx tiged amannn/vite-react-starter YOUR_FOLDER_NAME
-
 # Install dependencies
 npm install
+
+# Run backend for cookbook
+node app.js cookbook
 ```
 
-## Workflows
-
+## Run app
+Start application
 ```sh
+# Install dependencies
+npm install
+
+# Install special (?) dependencies
+npm install react-redux @reduxjs/toolkit react-router-dom axios bootstrap
+
 # Start the development server
 npm run dev
-
-# Lint for TypeScript and ESLint errors
-npm run lint
-
-# Run the app in production
-npm run build
-npm run start
 ```
